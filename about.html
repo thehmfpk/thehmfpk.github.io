@@ -12,31 +12,45 @@
 <body>
 
 <div class="app">
-  <aside class="sidebar">
-    <a class="mark" href="index.html"><span class="bracket">&lt;</span>HMF<span class="bracket">/&gt;</span></a>
+
+  <!-- Toggle Button -->
+  <button id="sidebarToggle" class="sidebar-toggle">
+    ☰
+  </button>
+
+  <aside class="sidebar" id="sidebar">
+    <a class="mark" href="index.html">
+      <span class="bracket">&lt;</span>HMF<span class="bracket">/&gt;</span>
+    </a>
+
     <span class="tree-label">~/portfolio</span>
+
     <nav>
-      <a href="index.html">index.html</a>
-      <a href="work.html">work.html</a>
-      <a href="about.html" class="active">about.html</a>
-      <a href="contact.html">contact.html</a>
+      <a href="index.html" class="active">Home</a>
+      <a href="work.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
     </nav>
-    <div class="status"><span class="dot"></span>build: passing</div>
+
+    <div class="status">
+      <span class="dot"></span>build: passing
+    </div>
   </aside>
+
 
   <main class="main">
     <div class="tabbar">
-      <a class="tab" href="index.html">index.html</a>
-      <a class="tab" href="work.html">work.html</a>
-      <a class="tab active" href="about.html">about.html</a>
-      <a class="tab" href="contact.html">contact.html</a>
+      <a class="tab" href="index.html">Home</a>
+      <a class="tab" href="work.html">Work</a>
+      <a class="tab active" href="about.html">About</a>
+      <a class="tab" href="contact.html">Contact</a>
     </div>
 
     <div class="content">
       <section>
         <div class="wrap">
-          <div class="path">~/portfolio<span class="sep">/</span>about.html</div>
-          <span class="comment">// about</span>
+          <div class="path">~/portfolio<span class="sep">/</span>About</div>
+          <span class="comment">About</span>
           <div style="display:flex; gap:28px; align-items:flex-start; flex-wrap:wrap; margin-top:14px;">
             <img src="images/profile.jpg" alt="Hafiz Muhammad Faizan" style="width:150px; height:150px; object-fit:cover; border-radius:8px; border:1px solid var(--line);">
             <div style="flex:1; min-width:260px;">
@@ -49,7 +63,7 @@
 
       <section class="alt">
         <div class="wrap">
-          <span class="comment">// skills</span>
+          <span class="comment">Skills</span>
           <h2 class="section-title">Skills</h2>
           <div class="skills-grid">
             <div class="skill-group">
@@ -74,7 +88,7 @@
 
       <section>
         <div class="wrap">
-          <span class="comment">// certifications</span>
+          <span class="comment">Certifications</span>
           <h2 class="section-title">Certifications</h2>
           <div class="skills-grid">
             <div class="skill-group">
@@ -99,7 +113,7 @@
 
       <section class="alt">
         <div class="wrap">
-          <span class="comment">// experience</span>
+          <span class="comment">experience</span>
           <h2 class="section-title">Experience</h2>
           <div class="timeline">
             <div class="item"><div class="when">2026 · Chicago, United States</div><h4>Machine Learning Engineer — FlyRank AI</h4></div>
@@ -120,7 +134,7 @@
       </section>
 
       <footer class="site">
-        <div class="wrap">hafizmfaizan.site · github.com/thehmfpk · linkedin.com/in/hafizmfaizan</div>
+        <div class="wrap">www.hafizmfaizan.site · github.com/thehmfpk · linkedin.com/in/hafizmfaizan</div>
       </footer>
     </div>
   </main>
