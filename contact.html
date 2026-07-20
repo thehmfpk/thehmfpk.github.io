@@ -12,31 +12,46 @@
 <body>
 
 <div class="app">
-  <aside class="sidebar">
-    <a class="mark" href="index.html"><span class="bracket">&lt;</span>HMF<span class="bracket">/&gt;</span></a>
+
+  <!-- Toggle Button -->
+  <button id="sidebarToggle" class="sidebar-toggle">
+    ☰
+  </button>
+
+  <aside class="sidebar" id="sidebar">
+    <a class="mark" href="index.html">
+      <span class="bracket">&lt;</span>HMF<span class="bracket">/&gt;</span>
+    </a>
+
     <span class="tree-label">~/portfolio</span>
+
     <nav>
-      <a href="index.html">index.html</a>
-      <a href="work.html">work.html</a>
-      <a href="about.html">about.html</a>
-      <a href="contact.html" class="active">contact.html</a>
+      <a href="index.html" class="active">Home</a>
+      <a href="work.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
     </nav>
-    <div class="status"><span class="dot"></span>build: passing</div>
+
+    <div class="status">
+      <span class="dot"></span>build: passing
+    </div>
   </aside>
+
+</div>
 
   <main class="main">
     <div class="tabbar">
-      <a class="tab" href="index.html">index.html</a>
-      <a class="tab" href="work.html">work.html</a>
-      <a class="tab" href="about.html">about.html</a>
-      <a class="tab active" href="contact.html">contact.html</a>
+      <a class="tab" href="index.html">Home</a>
+      <a class="tab" href="work.html">Work</a>
+      <a class="tab" href="about.html">About</a>
+      <a class="tab active" href="contact.html">Contact</a>
     </div>
 
     <div class="content">
       <section style="padding-top:64px;">
         <div class="wrap contact-block">
-          <div class="path">~/portfolio<span class="sep">/</span>contact.html</div>
-          <span class="comment">// contact</span>
+          <div class="path">~/portfolio<span class="sep">/</span>Contact</div>
+          <span class="comment">Contact</span>
           <h1 class="section-title" style="font-size:25px;">Let's talk</h1>
           <p style="max-width:460px; opacity:.75; margin:0 0 26px;">I build AI that ships — real agents and automations, not demos. If that's what you need, get in touch.</p>
           <a class="email" href="mailto:thehmfpk@gmail.com">thehmfpk@gmail.com</a>
@@ -50,7 +65,7 @@
       </section>
 
       <footer class="site">
-        <div class="wrap">hafizmfaizan.site · github.com/thehmfpk · linkedin.com/in/hafizmfaizan</div>
+        <div class="wrap">www.hafizmfaizan.site · github.com/thehmfpk · linkedin.com/in/hafizmfaizan</div>
       </footer>
     </div>
   </main>
