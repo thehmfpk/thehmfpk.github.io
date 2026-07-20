@@ -13,7 +13,114 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="styles.css">
+<style>/* --- Modern Contact Form Styling --- */
 
+/* Form Container Card */
+.contact-card {
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+  background: rgba(30, 41, 59, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+  box-sizing: border-box;
+}
+
+/* Form Layout */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  color: #cbd5e1;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+/* Inputs & Textarea */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  background: rgba(15, 23, 42, 0.6);
+  border: 1.5px solid #334155;
+  border-radius: 10px;
+  color: #f8fafc;
+  font-size: 0.95rem;
+  outline: none;
+  box-sizing: border-box;
+  transition: all 0.25s ease-in-out;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #64748b;
+}
+
+/* Focus States (Blue/Purple Glow) */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.15);
+  background: rgba(15, 23, 42, 0.9);
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+/* Submit Button */
+.send-btn {
+  margin-top: 8px;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.25s ease-in-out;
+  box-shadow: 0 4px 14px rgba(79, 70, 229, 0.35);
+}
+
+.send-btn:hover {
+  background: linear-gradient(135deg, #4f46e5 0%, #4338ca 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(79, 70, 229, 0.45);
+}
+
+.send-btn:active {
+  transform: translateY(0);
+}
+
+/* Responsive adjustment for small screens */
+@media (max-width: 480px) {
+  .contact-card {
+    padding: 24px;
+  }
+}</style>
 </head>
 
 
@@ -85,7 +192,7 @@
 
 
 <div class="path">
-~/portfolio<span class="sep">/</span>Contact
+portfolio<span class="sep">/</span>Contact
 </div>
 
 
@@ -105,11 +212,11 @@ I build AI that ships — real agents and automations, not demos.
 If that's what you need, get in touch.
 
 </p>
+<div class="contact-card">
+  <form class="contact-form" action="https://formspree.io/f/mpqvrjge" method="POST">
 
-<form 
-class="contact-form"
-action="YOUR_FORMSPREE_LINK_HERE"
-method="POST">
+
+
 
 
 <input 
@@ -178,6 +285,7 @@ Send Message →
 
 
 </form>
+</div>
 
 <div class="contact-links">
 
