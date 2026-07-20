@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Hafiz Muhammad Faizan — AI/ML Engineer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="I build AI that ships — real agents and automations, not demos.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="app">
+
+
+  <aside class="sidebar" id="sidebar">
+    <a class="mark" href="index.html">
+      <span class="bracket">&lt;</span>HMF<span class="bracket">/&gt;</span>
+    </a>
+
+    <span class="tree-label">~/portfolio</span>
+
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="work.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">contact</a>
+    </nav>
+
+    <div class="status">
+      <span class="dot"></span>build: passing
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="tabbar">
+      <button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle sidebar"><span></span></button>
+      <a class="tab active" href="index.html">Home</a>
+      <a class="tab" href="work.html">Work</a>
+      <a class="tab" href="about.html">About</a>
+      <a class="tab" href="contact.html">contact</a>
+    </div>
+
+    <div class="content">
+      <section class="hero">
+        <div class="wrap">
+          <div class="path">~/portfolio<span class="sep">/</span>index.html</div>
+          <h1>Hafiz Muhammad Faizan</h1>
+          <div class="type-line" id="typeLine"><span class="cursor"></span></div>
+          <a class="btn" href="mailto:thehmfpk@gmail.com">Get in touch about ML/AI roles</a>
+        </div>
+      </section>
+
+      <section class="alt">
+        <div class="wrap">
+          <span class="comment">worked with</span>
+          <div class="proof-strip">
+            <span>FlyRank AI</span>
+            <span>SafeX Solutions</span>
+            <span>Elevvo Pathways</span>
+            <span>DevelopersHub Corporation</span>
+            <span>BetaBytez</span>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrap">
+          <span class="comment">featured case</span>
+          <h2 class="section-title">Dr.HMF — AI Medical Agent</h2>
+          <div class="card-grid" style="grid-template-columns:1fr;">
+            <div class="card featured">
+              <img src="images/drhmf.jpg" alt="Dr.HMF disease prediction assistant screenshot">
+              <div class="body">
+                <p>An AI-powered disease prediction and healthcare assistant: given a patient's reported symptoms, it classifies the most likely condition and returns a confidence-ranked shortlist, not a single guess.</p>
+                <a href="work.html#drhmf">Read the full case study →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="alt">
+        <div class="wrap">
+          <span class="comment">more work</span>
+          <h2 class="section-title">Recent projects</h2>
+          <div class="card-grid">
+            <div class="card" style="animation-delay:.05s">
+              <img src="images/whatsapp.jpg" alt="WhatsApp chatbot screenshot">
+              <div class="body">
+                <h3>WhatsApp Chatbot</h3>
+                <p>AI-powered conversational agent handling real user conversations end to end.</p>
+                <a href="work.html#whatsapp">View case →</a>
+              </div>
+            </div>
+            <div class="card" style="animation-delay:.1s">
+              <img src="images/jobtracker.jpg" alt="Job Tracker dashboard screenshot">
+              <div class="body">
+                <h3>Job Tracker</h3>
+                <p>Professional platform for job discovery and networking.</p>
+                <a href="work.html#jobtracker">View case →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrap">
+          <span class="comment">About</span>
+          <h2 class="section-title">Software engineer, ML-focused</h2>
+          <p style="max-width:560px;">Based in Lahore, Pakistan. I work across frontend development, WordPress, UI/UX, and AI-powered automation — with a focus on shipping systems that actually run in production, not just in a notebook.</p>
+          <a href="about.html" class="btn ghost">More about me →</a>
+        </div>
+      </section>
+
+      <section class="alt" style="text-align:center;">
+        <div class="wrap">
+          <h2 class="section-title">Want something like this built?</h2>
+          <a class="btn" href="mailto:thehmfpk@gmail.com">Get in touch</a>
+        </div>
+      </section>
+
+      <footer class="site">
+        <div class="wrap">www.hafizmfaizan.site · github.com/thehmfpk · linkedin.com/in/hafizmfaizan</div>
+      </footer>
+    </div>
+  </main>
+</div>
+
+<script>
+  const line = "I build AI that ships — real agents and automations, not demos.";
+  const el = document.getElementById('typeLine');
+  const cursor = el.querySelector('.cursor');
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (prefersReduced) {
+    el.textContent = line;
+    el.appendChild(cursor);
+  } else {
+    let i = 0;
+    function type(){
+      if(i <= line.length){
+        el.textContent = line.slice(0, i);
+        el.appendChild(cursor);
+        i++;
+        setTimeout(type, 22);
+      }
+    }
+    type();
+  }
+</script>
+<script src="sidebar-toggle.js"></script>
+</body>
+</html>
