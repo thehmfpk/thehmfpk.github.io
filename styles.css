@@ -259,3 +259,72 @@ footer.site{
   .case .grid2{grid-template-columns:1fr;}
   .hero h1{font-size:28px;}
 }
+
+/* ===========================================
+   HERO BUTTONS
+=========================================== */
+
+.hero-buttons{
+    display:flex;
+    gap:14px;
+    margin-top:26px;
+    flex-wrap:wrap;
+    align-items:center;
+}
+
+.hero-buttons .btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-height:48px;
+    padding:0 22px;
+    text-decoration:none;
+    font-weight:600;
+    font-size:15px;
+    border-radius:0;
+    transition:.25s ease;
+    border:1px solid transparent;
+    cursor:pointer;
+}
+
+/* Primary Button */
+
+.hero-buttons .btn:first-child{
+    background:#10202B;
+    color:#F5F7F7;
+    border-color:#10202B;
+}
+
+.hero-buttons .btn:first-child:hover{
+    background:#173241;
+    border-color:#173241;
+}
+
+/* Secondary Buttons */
+
+.hero-buttons .ghost{
+    background:transparent;
+    color:#10202B;
+    border:1px solid rgba(16,32,43,.35);
+}
+
+.hero-buttons .ghost:hover{
+    background:#10202B;
+    color:#F5F7F7;
+    border-color:#10202B;
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+    .hero-buttons{
+        flex-direction:column;
+        align-items:stretch;
+    }
+
+    .hero-buttons .btn{
+        width:100%;
+    }
+
+}
