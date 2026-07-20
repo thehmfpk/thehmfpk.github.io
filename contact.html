@@ -1,73 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <title>Contact — Hafiz Muhammad Faizan</title>
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="styles.css">
+
 </head>
+
+
 <body>
+
 
 <div class="app">
 
 
-  <aside class="sidebar" id="sidebar">
-    <a class="mark" href="index.html">
-      <span class="bracket">&lt;</span>HMF<span class="bracket">/&gt;</span>
-    </a>
+<aside class="sidebar" id="sidebar">
 
-    <span class="tree-label">~/portfolio</span>
+<a class="mark" href="index.html">
+<span class="bracket">&lt;</span>HMF<span class="bracket">/&gt;</span>
+</a>
 
-    <nav>
-      <a href="index.html" class="active">Home</a>
-      <a href="work.html">Work</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
 
-    <div class="status">
-      <span class="dot"></span>build: passing
-    </div>
-  </aside>
+<span class="tree-label">~/portfolio</span>
 
-  <main class="main">
-    <div class="tabbar">
-      <button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle sidebar"><span></span></button>
-      <a class="tab" href="index.html">Home</a>
-      <a class="tab" href="work.html">Work</a>
-      <a class="tab" href="about.html">About</a>
-      <a class="tab active" href="contact.html">Contact</a>
-    </div>
 
-    <div class="content">
-      <section style="padding-top:64px;">
-        <div class="wrap contact-block">
-          <div class="path">~/portfolio<span class="sep">/</span>Contact</div>
-          <span class="comment">Contact</span>
-          <h1 class="section-title" style="font-size:25px;">Let's talk</h1>
-          <p style="max-width:460px; opacity:.75; margin:0 0 26px;">I build AI that ships — real agents and automations, not demos. If that's what you need, get in touch.</p>
-          <a class="email" href="mailto:thehmfpk@gmail.com">thehmfpk@gmail.com</a>
-          <div class="contact-links">
-            <a href="tel:+923274877206">+92-327-4877206</a>
-            <a href="https://github.com/thehmfpk" target="_blank" rel="noopener">github.com/thehmfpk</a>
-            <a href="https://linkedin.com/in/hafizmfaizan" target="_blank" rel="noopener">linkedin.com/in/hafizmfaizan</a>
-            <a href="files/hafiz-faizan-cv.pdf" target="_blank" rel="noopener">Download CV ↓</a>
-            <!-- TODO: swap in your real Calendly link once created at calendly.com -->
-            <a href="https://calendly.com/thehmfpk" target="_blank" rel="noopener">Book a call →</a>
-          </div>
-          <p style="margin-top:26px; opacity:.5; font-family:'JetBrains Mono', monospace; font-size:12px;">Lahore, Pakistan</p>
-        </div>
-      </section>
+<nav>
 
-      <footer class="site">
-        <div class="wrap">www.hafizmfaizan.site · github.com/thehmfpk · linkedin.com/in/hafizmfaizan</div>
-      </footer>
-    </div>
-  </main>
+<a href="index.html">Home</a>
+<a href="work.html">Work</a>
+<a href="about.html">About</a>
+<a href="contact.html" class="active">Contact</a>
+
+</nav>
+
+
+<div class="status">
+<span class="dot"></span>build: passing
+</div>
+
+
+</aside>
+
+
+
+
+
+<main class="main">
+
+
+<div class="tabbar">
+
+
+<button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle sidebar">
+<span></span>
+</button>
+
+
+<a class="tab" href="index.html">Home</a>
+<a class="tab" href="work.html">Work</a>
+<a class="tab" href="about.html">About</a>
+<a class="tab active" href="contact.html">Contact</a>
+
+
+</div>
+
+
+
+
+
+<div class="content">
+
+
+<section style="padding-top:64px;">
+
+
+<div class="wrap contact-block">
+
+
+<div class="path">
+~/portfolio<span class="sep">/</span>Contact
+</div>
+
+
+<span class="comment">
+Contact
+</span>
+
+
+<h1 class="section-title">
+Let's talk
+</h1>
+
+
+<p class="contact-intro">
+
+I build AI that ships — real agents and automations, not demos.
+If that's what you need, get in touch.
+
+</p>
+
+<form 
+class="contact-form"
+action="https://formspree.io/f/mpqvrjge"
+method="POST">
+<input 
+type="hidden"
+name="_subject"
+value="New Portfolio Contact Message">
+<label>
+Name
+</label>
+<input 
+type="text"
+name="name"
+placeholder="Your name"
+required>
+<label>
+Email
+</label>
+<input 
+type="email"
+name="email"
+placeholder="Your email"
+required>
+<label>
+Message
+</label>
+
+<textarea
+name="message"
+rows="6"
+placeholder="Write your message..."
+required></textarea>
+<button type="submit">
+Send Message →
+</button>
+<p class="success-message">
+Message sent successfully. I will get back to you soon.
+</p>
+
+
+</form>
+
+<div class="contact-links">
+
+<a href="mailto:thehmfpk@gmail.com">
+thehmfpk@gmail.com
+</a>
+
+<a href="tel:+923274877206">
++92-327-4877206
+</a>
+
+<a href="https://github.com/thehmfpk" target="_blank">
+github.com/thehmfpk
+</a>
+
+<a href="https://linkedin.com/in/hafizmfaizan" target="_blank">
+linkedin.com/in/hafizmfaizan
+</a>
+
+<a href="files/hafiz-faizan-cv.pdf" target="_blank">
+Download CV ↓
+</a>
+
+<a href="https://calendly.com/thehmfpk" target="_blank">
+Book a call →
+</a>
+</div>
+<p class="location">
+Lahore, Pakistan
+</p>
+</div>
+</section>
+<footer class="site">
+<div class="wrap">
+www.hafizmfaizan.site · github.com/thehmfpk · linkedin.com/in/hafizmfaizan
+</div>
+</footer>
+</div>
+</main>
 </div>
 <script src="sidebar-toggle.js"></script>
 </body>
+
+
 </html>
