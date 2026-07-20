@@ -13,24 +13,45 @@
 <body>
 
 <div class="app">
-  <aside class="sidebar">
-    <a class="mark" href="index.html"><span class="bracket">&lt;</span>HMF<span class="bracket">/&gt;</span></a>
+<div class="app">
+
+  <!-- Toggle Button -->
+  <button id="sidebarToggle" class="sidebar-toggle">
+    ☰
+  </button>
+
+  <aside class="sidebar" id="sidebar">
+    <a class="mark" href="index.html">
+      <span class="bracket">&lt;</span>HMF<span class="bracket">/&gt;</span>
+    </a>
+
     <span class="tree-label">~/portfolio</span>
+
     <nav>
-      <a href="index.html" class="active">index.html</a>
-      <a href="work.html">work.html</a>
-      <a href="about.html">about.html</a>
-      <a href="contact.html">contact.html</a>
+      <a href="index.html" class="active">Home</a>
+      <a href="work.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">contact</a>
     </nav>
-    <div class="status"><span class="dot"></span>build: passing</div>
+
+    <div class="status">
+      <span class="dot"></span>build: passing
+    </div>
   </aside>
+
+  <!-- Your main content -->
+  <main>
+    ...
+  </main>
+
+</div>
 
   <main class="main">
     <div class="tabbar">
-      <a class="tab active" href="index.html">index.html</a>
-      <a class="tab" href="work.html">work.html</a>
-      <a class="tab" href="about.html">about.html</a>
-      <a class="tab" href="contact.html">contact.html</a>
+      <a class="tab active" href="index.html">Home</a>
+      <a class="tab" href="work.html">Work</a>
+      <a class="tab" href="about.html">About</a>
+      <a class="tab" href="contact.html">contact</a>
     </div>
 
     <div class="content">
@@ -45,7 +66,7 @@
 
       <section class="alt">
         <div class="wrap">
-          <span class="comment">// worked with</span>
+          <span class="comment">worked with</span>
           <div class="proof-strip">
             <span>FlyRank AI</span>
             <span>SafeX Solutions</span>
@@ -58,7 +79,7 @@
 
       <section>
         <div class="wrap">
-          <span class="comment">// featured case</span>
+          <span class="comment">featured case</span>
           <h2 class="section-title">Dr.HMF — AI Medical Agent</h2>
           <div class="card-grid" style="grid-template-columns:1fr;">
             <div class="card">
@@ -74,7 +95,7 @@
 
       <section class="alt">
         <div class="wrap">
-          <span class="comment">// more work</span>
+          <span class="comment">more work</span>
           <h2 class="section-title">Recent projects</h2>
           <div class="card-grid">
             <div class="card" style="animation-delay:.05s">
@@ -99,7 +120,7 @@
 
       <section>
         <div class="wrap">
-          <span class="comment">// about</span>
+          <span class="comment">About</span>
           <h2 class="section-title">Software engineer, ML-focused</h2>
           <p style="max-width:560px;">Based in Lahore, Pakistan. I work across frontend development, WordPress, UI/UX, and AI-powered automation — with a focus on shipping systems that actually run in production, not just in a notebook.</p>
           <a href="about.html" class="btn ghost">More about me →</a>
@@ -114,7 +135,7 @@
       </section>
 
       <footer class="site">
-        <div class="wrap">hafizmfaizan.site · github.com/thehmfpk · linkedin.com/in/hafizmfaizan</div>
+        <div class="wrap">www.hafizmfaizan.site · github.com/thehmfpk · linkedin.com/in/hafizmfaizan</div>
       </footer>
     </div>
   </main>
