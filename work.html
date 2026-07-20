@@ -12,31 +12,44 @@
 <body>
 
 <div class="app">
-  <aside class="sidebar">
-    <a class="mark" href="index.html"><span class="bracket">&lt;</span>HMF<span class="bracket">/&gt;</span></a>
+
+  <!-- Toggle Button -->
+  <button id="sidebarToggle" class="sidebar-toggle">
+    ☰
+  </button>
+
+  <aside class="sidebar" id="sidebar">
+    <a class="mark" href="index.html">
+      <span class="bracket">&lt;</span>HMF<span class="bracket">/&gt;</span>
+    </a>
+
     <span class="tree-label">~/portfolio</span>
+
     <nav>
-      <a href="index.html">index.html</a>
-      <a href="work.html" class="active">work.html</a>
-      <a href="about.html">about.html</a>
-      <a href="contact.html">contact.html</a>
+      <a href="index.html" class="active">Home</a>
+      <a href="work.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
     </nav>
-    <div class="status"><span class="dot"></span>build: passing</div>
+
+    <div class="status">
+      <span class="dot"></span>build: passing
+    </div>
   </aside>
 
   <main class="main">
     <div class="tabbar">
-      <a class="tab" href="index.html">index.html</a>
-      <a class="tab active" href="work.html">work.html</a>
-      <a class="tab" href="about.html">about.html</a>
-      <a class="tab" href="contact.html">contact.html</a>
+      <a class="tab" href="index.html">Home</a>
+      <a class="tab active" href="work.html">Work</a>
+      <a class="tab" href="about.html">About</a>
+      <a class="tab" href="contact.html">Contact</a>
     </div>
 
     <div class="content">
       <section style="padding-bottom:0;">
         <div class="wrap">
-          <div class="path">~/portfolio<span class="sep">/</span>work.html</div>
-          <span class="comment">// case studies</span>
+          <div class="path">~/portfolio<span class="sep">/</span>Work</div>
+          <span class="comment">case studies</span>
           <h1 class="section-title" style="font-size:27px;">Six things I actually built</h1>
         </div>
       </section>
@@ -194,7 +207,7 @@
       </section>
 
       <footer class="site">
-        <div class="wrap">hafizmfaizan.site · github.com/thehmfpk · linkedin.com/in/hafizmfaizan</div>
+        <div class="wrap">www.hafizmfaizan.site · github.com/thehmfpk · linkedin.com/in/hafizmfaizan</div>
       </footer>
     </div>
   </main>
